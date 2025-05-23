@@ -183,7 +183,7 @@
 }
 
 .hero-section {
-    background-image: url('assets/img/imgFondo.png'); /* Reemplaza con tu imagen */
+    background-image: url('Assets/img/page/imgFondo.png'); /* Reemplaza con tu imagen */
     background-size: cover;
     background-position: center;
     height: 90vh; /* 80% del viewport height */
