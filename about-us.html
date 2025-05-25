@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CustomHostT</title>
     <link rel="stylesheet" href="about-us.css">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -15,39 +16,46 @@
             <div class="logo"><img class="imgLogo" src="Assets/img/page/ChatGPT Image 23 abr 2025, 09_42_52-Photoroom 1.png" alt="Logo img"></div>
             <div class="header-contact">
                 <div class="language-selector">
-                  <img src="Assets/img/page/Vector.png" alt="Globo" class="global-icon">
-                  <select id="language-select">
-                    <option value="es">ES</option>
-                    <option value="en">EN</option>
-                  </select>
+                  <div class="language-toggle">
+                    <span class="lang-option" data-lang="en">
+                      <img src="Assets/img/flags/en.png" alt="English" class="flag-icon">
+                      <span>EN</span>
+                    </span>
+                    <div class="toggle-slider" id="language-toggle">
+                      <div class="toggle-button"></div>
+                    </div>
+                    <span class="lang-option" data-lang="es">
+                      <img src="Assets/img/flags/es.png" alt="Español" class="flag-icon">
+                      <span>ES</span>
+                    </span>
+                  </div>
                 </div>
                 <div class="phone"><img src="Assets/img/page/Phone call.png" alt=""> +511 900-800</div>
                 <div class="email"><img src="Assets/img/page/Vector (1).png" alt="">reservas@customhost.com</div>
                 <div class="auth-links">
-                    <a href="#"><img src="Assets/img/page/person.png" alt="">Inicio sesión</a> | <a href="#">Regístrate</a>
+                    <a href="#"><img src="Assets/img/page/person.png" alt=""><span data-i18n="login">Sign in</span></a> | <a href="#"><span data-i18n="register">Register</span></a>
                 </div>
             </div>            
         </div>
         
         <nav class="main-nav">
-            <a href="https://softcore-app-web-1asi0730-2510-4395.github.io/AppWeb-landing-page/about-us.html">Nosotros</a>
-            <a href="https://softcore-app-web-1asi0730-2510-4395.github.io/AppWeb-landing-page/servicios.html">Servicios</a>
-            <a href="https://softcore-app-web-1asi0730-2510-4395.github.io/AppWeb-landing-page/#testimonios">Testimonios</a>
-            <a href="https://softcore-app-web-1asi0730-2510-4395.github.io/AppWeb-landing-page/#soporte">Soporte</a>
+            <a href="about-us.html" data-i18n="aboutHeader">About Us</a>
+            <a href="servicios.html" data-i18n="servicesHeader">Services</a>
+            <a href="#testimonios" data-i18n="testimonialsHeader">Testimonials</a>
+            <a href="#soporte" data-i18n="supportHeader">Support</a>
         </nav>
     </header>
 
 <section class="hero-section">
     <div class="hero-content">
-        <h1 class="hero-title">About Us<br>Who We Are?</h1>
-        
+        <h1 class="hero-title"><span data-i18n="aboutUs.heroTitle1">About Us</span><br><span data-i18n="aboutUs.heroTitle2">Who We Are?</span></h1>
     </div>
 </section>
 
 <section class="customhost-section">
   <div class="text-content">
-    <h1>CustomHost Hotel</h1>
-    <p>
+    <h1 data-i18n="aboutUs.sectionTitle">CustomHost Hotel</h1>
+    <p data-i18n="aboutUs.description">
       Our hotel is an innovative space strategically located to offer a unique experience of personalization and comfort. It combines wellness and elegance with the latest in home automation technology, allowing every detail of your stay to be tailored to your preferences.
 With rooms equipped with automatic temperature control, personalized services from the moment you arrive, and a modern infrastructure that includes secure access, relaxation areas, and full connectivity.
     </p>
@@ -60,19 +68,19 @@ With rooms equipped with automatic temperature control, personalized services fr
 <section class="service-icons-bar">
   <div class="icon-item">
     <span class="material-icons">wifi</span>
-    <p>WIFI</p>
+    <p data-i18n="aboutUs.services.wifi">WIFI</p>
   </div>
   <div class="icon-item">
     <span class="material-icons">computer</span>
-    <p>SISTEMA 24/7</p>
+    <p data-i18n="aboutUs.services.system">24/7 SYSTEM</p>
   </div>
   <div class="icon-item">
     <span class="material-icons">assignment</span>
-    <p>SISTEMA PERSONALIZADO</p>
+    <p data-i18n="aboutUs.services.customSystem">CUSTOM SYSTEM</p>
   </div>
   <div class="icon-item">
     <span class="material-icons">pool</span>
-    <p>PISCINA</p>
+    <p data-i18n="aboutUs.services.pool">POOL</p>
   </div>
 </section>
 
@@ -84,25 +92,25 @@ With rooms equipped with automatic temperature control, personalized services fr
       <p>contact@customhost.com<br>+51 995 589 830</p>
     </div>
     <div class="footer-col">
-      <h4>SECTIONS</h4>
+      <h4 data-i18n="footer.sections">SECTIONS</h4>
       <ul>
-        <li>Home</li>
-        <li>Services</li>
-        <li>About Us</li>
-        <li>Contact Us</li>
+        <li data-i18n="footer.home">Home</li>
+        <li data-i18n="footer.services">Services</li>
+        <li data-i18n="footer.about">About Us</li>
+        <li data-i18n="footer.contact">Contact Us</li>
       </ul>
     </div>
     <div class="footer-col">
-      <h4>HELP</h4>
+      <h4 data-i18n="footer.help">HELP</h4>
       <ul>
-        <li>FAQs</li>
-        <li>Terms of Service</li>
-        <li>Report a Problem</li>
-        <li>Privacy Policy</li>
+        <li data-i18n="footer.faqs">FAQs</li>
+        <li data-i18n="footer.terms">Terms of Service</li>
+        <li data-i18n="footer.report">Report a Problem</li>
+        <li data-i18n="footer.privacy">Privacy Policy</li>
       </ul>
     </div>
     <div class="footer-col">
-      <h4>FOLLOW US</h4>
+      <h4 data-i18n="footer.follow">FOLLOW US</h4>
       <ul>
         <li>Facebook</li>
         <li>Twitter</li>
@@ -112,5 +120,7 @@ With rooms equipped with automatic temperature control, personalized services fr
     </div>
     <div class="footer-bottom">© All rights reserved by SoftCore</div>
   </footer>
+
+  <script src="js/i18n.js"></script>
 </body>
 </html>
