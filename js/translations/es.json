@@ -25,7 +25,7 @@
       "title2": "ES UNA EXPERIENCIA DISEÑADA PARA TI",
       "button": "Solicitar una DEMO"
     },
-    "options": {
+    "roomOptions": {
       "title": "Opciones Flexibles de Habitaciones",
       "subtitle": "Explora habitaciones flexibles para huéspedes y herramientas potentes para hoteleros",
       "smart": {
@@ -63,6 +63,22 @@
       "item3": "Prueba gratuita de 30 días",
       "button": "Regístrate en 5 minutos",
       "note": "No se requiere tarjeta de crédito"
+    },
+    "title": "Nuestros servicios",
+    "card1": {
+      "title": "Tu Estancia, Tus Reglas",
+      "item1": "Controla la iluminación, temperatura y ambiente antes de tu llegada",
+      "item2": "Solicita comidas con tus preferencias dietéticas",
+      "item3": "Selecciona tu almohada perfecta y configuración para dormir",
+      "item4": "Personaliza los amenities y ajustes del baño",
+      "button": "Comienza a Personalizar Ahora"
+    },
+    "card2": {
+      "title": "Para Hoteles: Mejora la Experiencia de tus Huéspedes",
+      "item1": "Atrae huéspedes de alto valor que pagan más por personalización",
+      "item2": "Panel fácil de usar para gestionar preferencias",
+      "item3": "Destácate con opciones de personalización de marca",
+      "button": "Registra tu Hotel"
     }
   },
   
