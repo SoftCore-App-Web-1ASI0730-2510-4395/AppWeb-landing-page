@@ -1,0 +1,119 @@
+{
+  "login": "Inicio sesión",
+  "register": "Regístrate",
+  "aboutHeader": "Nosotros",
+  "servicesHeader": "Servicios",
+  "testimonialsHeader": "Testimonios",
+  "supportHeader": "Soporte",
+  
+  "hero": {
+    "title": "El preludio perfecto de tu siguiente aventura",
+    "button": "VER HABITACIONES"
+  },
+  
+  "about": {
+    "subtitle": "UN HOTEL. UN COMIENZO",
+    "title": "¡Bienvenido a Custom Host!",
+    "text1": "Más que un hotel, somos una experiencia inteligente.",
+    "text2": "Deja atrás lo convencional y descubre un espacio donde cada detalle —desde la temperatura hasta la iluminación— se personaliza antes de tu llegada.",
+    "button": "SABER MÁS"
+  },
+  
+  "services": {
+    "hero": {
+      "title1": "EN CUSTOMHOST, TU COMODIDAD NO ES ESTÁNDAR.",
+      "title2": "ES UNA EXPERIENCIA DISEÑADA PARA TI",
+      "button": "Solicitar una DEMO"
+    },
+    "options": {
+      "title": "Opciones Flexibles de Habitaciones",
+      "subtitle": "Explora habitaciones flexibles para huéspedes y herramientas potentes para hoteleros",
+      "smart": {
+        "title": "Controles Inteligentes",
+        "description": "Ajusta la iluminación, temperatura y ambiente con nuestros controles intuitivos."
+      },
+      "amenities": {
+        "title": "Amenidades Personalizadas",
+        "description": "Elige tus artículos de tocador preferidos, ropa de cama y características de habitación."
+      },
+      "tools": {
+        "title": "Herramientas para Hoteles",
+        "description": "Panel de control potente para gestionar preferencias de huéspedes y configuraciones de habitaciones."
+      }
+    },
+    "customization": {
+      "title": "Personalización para tus huéspedes = Más reservas para ti",
+      "satisfaction": {
+        "title": "Mayor Satisfacción del Huésped",
+        "description": "Supera las expectativas con experiencias personalizadas que generan reseñas positivas y reservas repetidas."
+      },
+      "advantage": {
+        "title": "Ventaja Competitiva",
+        "description": "Destácate en el mercado con opciones únicas de personalización que atraen a viajeros modernos."
+      },
+      "management": {
+        "title": "Gestión Fácil",
+        "description": "Panel de control intuitivo para gestionar preferencias y ofrecer un servicio excepcional sin esfuerzo."
+      }
+    },
+    "business": {
+      "title": "Listo para transformar tu negocio",
+      "item1": "Proceso rápido de registro de 5 minutos",
+      "item2": "Soporte de incorporación gratuito",
+      "item3": "Prueba gratuita de 30 días",
+      "button": "Regístrate en 5 minutos",
+      "note": "No se requiere tarjeta de crédito"
+    }
+  },
+  
+  "affiliated": {
+    "title": "NUESTROS HOTELES AFILIADOS",
+    "text": "ESCOGE ENTRE LA VARIEDAD DE HOTELES",
+    "button": "Reserva ahora"
+  },
+  
+  "testimonials": {
+    "title": "TESTIMONIOS",
+    "juan": "Creo que es un sistema innovador para gestionar hoteles. Me encantó el servicio.",
+    "christina": "El sistema es súper fácil de usar y entender. No tuve ningún problema.",
+    "abigail": "El sistema hizo mucho más fácil personalizar mi estancia—muy cómodo."
+  },
+  
+  "support": {
+    "title": "Soporte",
+    "faq": {
+      "title": "PREGUNTAS FRECUENTES",
+      "subtitle": "Encuentra respuestas rápidas",
+      "option1": "Personalización de Habitaciones",
+      "option2": "Tecnología y Automatización",
+      "option3": "Reservas y Pagos"
+    }
+  },
+  
+  "footer": {
+    "sections": "SECCIONES",
+    "home": "Inicio",
+    "services": "Servicios",
+    "about": "Nosotros",
+    "contact": "Contáctenos",
+    "help": "AYUDA",
+    "faqs": "Preguntas Frecuentes",
+    "terms": "Términos de Servicio",
+    "report": "Reportar un Problema",
+    "privacy": "Política de Privacidad",
+    "follow": "SÍGUENOS"
+  },
+  
+  "aboutUs": {
+    "heroTitle1": "Nosotros",
+    "heroTitle2": "¿Quiénes Somos?",
+    "sectionTitle": "Hotel CustomHost",
+    "description": "Nuestro hotel es un espacio innovador estratégicamente ubicado para ofrecer una experiencia única de personalización y confort. Combina bienestar y elegancia con lo último en tecnología de domótica, permitiendo que cada detalle de tu estancia se adapte a tus preferencias. Con habitaciones equipadas con control automático de temperatura, servicios personalizados desde el momento de tu llegada, y una infraestructura moderna que incluye acceso seguro, áreas de relajación y conectividad completa.",
+    "services": {
+      "wifi": "WIFI",
+      "system": "SISTEMA 24/7",
+      "customSystem": "SISTEMA PERSONALIZADO",
+      "pool": "PISCINA"
+    }
+  }
+}

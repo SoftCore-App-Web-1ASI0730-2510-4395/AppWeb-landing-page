@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,82 +14,88 @@
             <div class="logo"><img class="imgLogo" src="Assets/img/page/ChatGPT Image 23 abr 2025, 09_42_52-Photoroom 1.png" alt="Logo img"></div>
             <div class="header-contact">
                 <div class="language-selector">
-                  <img src="Assets/img/page/Vector.png" alt="Globo" class="global-icon">
-                  <select id="language-select">
-                    <option value="es">ES</option>
-                    <option value="en">EN</option>
-                  </select>
+                  <div class="language-toggle">
+                    <span class="lang-option" data-lang="en">
+                      <img src="Assets/img/flags/en.png" alt="English" class="flag-icon">
+                      <span>EN</span>
+                    </span>
+                    <div class="toggle-slider" id="language-toggle">
+                      <div class="toggle-button"></div>
+                    </div>
+                    <span class="lang-option" data-lang="es">
+                      <img src="Assets/img/flags/es.png" alt="Español" class="flag-icon">
+                      <span>ES</span>
+                    </span>
+                  </div>
                 </div>
                 <div class="phone"><img src="Assets/img/page/Phone call.png" alt=""> +511 900-800</div>
                 <div class="email"><img src="Assets/img/page/Vector (1).png" alt="">reservas@customhost.com</div>
                 <div class="auth-links">
-                    <a href="#"><img src="Assets/img/page/person.png" alt="">Inicio sesión</a> | <a href="#">Regístrate</a>
+                    <a href="#"><img src="Assets/img/page/person.png" alt=""><span data-i18n="login">Sign in</span></a> | <a href="#"><span data-i18n="register">Register</span></a>
                 </div>
             </div>            
         </div>
         
         <nav class="main-nav">
-            <a href="about-us.html">Nosotros</a>
-            <a href="servicios.html">Servicios</a>
-            <a href="#testimonios">Testimonios</a>
-            <a href="#soporte">soporte</a>
+            <a href="about-us.html" data-i18n="aboutHeader">About Us</a>
+            <a href="servicios.html" data-i18n="servicesHeader">Services</a>
+            <a href="#testimonios" data-i18n="testimonialsHeader">Testimonials</a>
+            <a href="#soporte" data-i18n="supportHeader">Support</a>
         </nav>
     </header>
 <section class="hero-section">
     <div class="hero-content">
-        <h1>El preludio perfecto de tu siguiente aventura </h1>
-        <a href="#" class="hero-button">VER HABITACIONES<img src="Assets/img/page/Icon.png" alt="" class="button-icon"></a>
+        <h1 data-i18n="hero.title">The perfect prelude to your next adventure</h1>
+        <a href="#" class="hero-button"><span data-i18n="hero.button">VIEW ROOMS</span><img src="Assets/img/page/Icon.png" alt="" class="button-icon"></a>
     </div>
 </section>
 
 <section class="about-section">
     <div class="about-container">
         <div class="about-content">
-            <h2 class="section-subtitle">UN HOTEL. UN COMIENZO</h2>
-            <h3 class="section-title">¡Bienvenido a Custom Host!</h3>
+            <h2 class="section-subtitle" data-i18n="about.subtitle">ONE HOTEL. ONE BEGINNING</h2>
+            <h3 class="section-title" data-i18n="about.title">Welcome to Custom Host!</h3>
             <p class="about-text">
-                Más que un hotel, somos una experiencia inteligente.<br>
-                Deja atrás lo convencional y descubre un espacio donde cada detalle —desde
-                la temperatura hasta la iluminación— se personaliza antes de tu llegada.
+                <span data-i18n="about.text1">More than a hotel, we are an intelligent experience.</span><br>
+                <span data-i18n="about.text2">Leave behind the conventional and discover a space where every detail—from temperature to lighting—is personalized before your arrival.</span>
             </p>
-            <a href="#" class="cta-button">SABER MÁS <span class="arrow">→</span></a>
+            <a href="#" class="cta-button"><span data-i18n="about.button">LEARN MORE</span> <span class="arrow">→</span></a>
         </div>
         <div class="about-image">
-            <!-- Aquí irá tu imagen -->
             <img src="Assets/img/page/welcomeImage.png" alt="Interior del hotel Custom Host">
         </div>
     </div>
 </section>
 
 <section class="services-section">
-  <h2 class="service-title">Our services</h2>
+  <h2 class="service-title" data-i18n="services.title">Our services</h2>
         <div class="services-container">
             <div class="service-card">
                 <img src="Assets/img/page/register-hotel.png" alt="Your Stay, Your Rules">
-                <h3>Your Stay, Your Rules</h3>
+                <h3 data-i18n="services.card1.title">Your Stay, Your Rules</h3>
                 <ul>
-                    <li><i class="fas fa-lightbulb"></i> Control lighting, temperature, and ambiance before arrival</li>
-                    <li><i class="fas fa-utensils"></i> Pre-order meals with dietary preferences</li>
-                    <li><i class="fas fa-bed"></i> Select your perfect pillow and sleep setup</li>
-                    <li><i class="fas fa-toilet-paper"></i> Customize bathroom amenities and presets</li>
+                    <li><i class="fas fa-lightbulb"></i> <span data-i18n="services.card1.item1">Control lighting, temperature, and ambiance before arrival</span></li>
+                    <li><i class="fas fa-utensils"></i> <span data-i18n="services.card1.item2">Pre-order meals with dietary preferences</span></li>
+                    <li><i class="fas fa-bed"></i> <span data-i18n="services.card1.item3">Select your perfect pillow and sleep setup</span></li>
+                    <li><i class="fas fa-toilet-paper"></i> <span data-i18n="services.card1.item4">Customize bathroom amenities and presets</span></li>
                 </ul>
-                <a href="#" class="btn-orange">Start Personalizing Now</a>
+                <a href="#" class="btn-orange" data-i18n="services.card1.button">Start Personalizing Now</a>
             </div>
             <div class="service-card">
                 <img src="Assets/img/page/personalize-img.png" alt="For Hotels: Upgrade Your Guest Experience">
-                <h3>For Hotels: Upgrade Your Guest Experience</h3>
+                <h3 data-i18n="services.card2.title">For Hotels: Upgrade Your Guest Experience</h3>
                 <ul>
-                    <li><i class="fas fa-star"></i> Attract high-value guests who pay more for customization</li>
-                    <li><i class="fas fa-chart-line"></i> Easy-to-use dashboard for managing preferences</li>
-                    <li><i class="fas fa-crown"></i> Stand out with branded personalization options</li>
+                    <li><i class="fas fa-star"></i> <span data-i18n="services.card2.item1">Attract high-value guests who pay more for customization</span></li>
+                    <li><i class="fas fa-chart-line"></i> <span data-i18n="services.card2.item2">Easy-to-use dashboard for managing preferences</span></li>
+                    <li><i class="fas fa-crown"></i> <span data-i18n="services.card2.item3">Stand out with branded personalization options</span></li>
                 </ul>
-                <a href="#" class="btn-orange">Register Your Hotel</a>
+                <a href="#" class="btn-orange" data-i18n="services.card2.button">Register Your Hotel</a>
             </div>
         </div>
 </section>
 
 <section class="affiliated-hotels-section">
-  <h2 class="affiliated-title">NUESTROS HOTELES AFILIADOS</h2>
+  <h2 class="affiliated-title" data-i18n="affiliated.title">OUR AFFILIATED HOTELS</h2>
   <div class="hotel-logos-container">
     <!-- Primer fila -->
     <div class="hotel-logo-card">
@@ -115,48 +121,48 @@
   </div>
 
   <!-- Texto y botón al final -->
-  <p class="selection-text">ESCOGE ENTRE LA VARIEDAD DE HOTELES</p>
-  <a href="#" class="btn-orange">Reserva ahora</a>
+  <p class="selection-text" data-i18n="affiliated.text">CHOOSE FROM A VARIETY OF HOTELS</p>
+  <a href="#" class="btn-orange" data-i18n="affiliated.button">Book now</a>
 </section>
 
 <section class="testimonios" id="testimonios">
-    <h2>TESTIMONIALS</h2>
+    <h2 data-i18n="testimonials.title">TESTIMONIALS</h2>
     <div class="testimonios-container">
       <div class="testimonio">
         <img src="Assets/img/page/user3.jpg" alt="Juan Velásquez">
         <h4>Juan Velásquez</h4>
-        <p>I think it's an innovative system to manage hotels. I loved the service.</p>
+        <p data-i18n="testimonials.juan">I think it's an innovative system to manage hotels. I loved the service.</p>
       </div>
       <div class="testimonio">
         <img src="Assets/img/page/user1.jpg" alt="Christina Aguilera">
         <h4>Christina Aguilera</h4>
-        <p>The system is super easy to use and understand. I had no issues at all.</p>
+        <p data-i18n="testimonials.christina">The system is super easy to use and understand. I had no issues at all.</p>
       </div>
       <div class="testimonio">
         <img src="Assets/img/page/user2.jpg" alt="Abigail Guzman">
         <h4>Abigail Guzman</h4>
-        <p>The system made it much easier to personalize my stay—very comfortable.</p>
+        <p data-i18n="testimonials.abigail">The system made it much easier to personalize my stay—very comfortable.</p>
       </div>
     </div>
   </section>
 
   <section class="soporte" id="soporte">
-    <h2>Support</h2>
+    <h2 data-i18n="support.title">Support</h2>
     <div class="soporte-container">
       
       <!-- FAQs -->
       <div class="soporte-card">
-        <h3>FREQUENTLY ASKED QUESTIONS</h3>
+        <h3 data-i18n="support.faq.title">FREQUENTLY ASKED QUESTIONS</h3>
         <hr>
-        <p>Find quick answers</p>
+        <p data-i18n="support.faq.subtitle">Find quick answers</p>
         <select>
-          <option>Room Personalization</option>
+          <option data-i18n="support.faq.option1">Room Personalization</option>
         </select>
         <select>
-          <option>Technology & Automation</option>
+          <option data-i18n="support.faq.option2">Technology & Automation</option>
         </select>
         <select>
-          <option>Reservations & Payments</option>
+          <option data-i18n="support.faq.option3">Reservations & Payments</option>
         </select>
       </div>
 
@@ -171,25 +177,25 @@
       <p>contact@customhost.com<br>+51 995 589 830</p>
     </div>
     <div class="footer-col">
-      <h4>SECTIONS</h4>
+      <h4 data-i18n="footer.sections">SECTIONS</h4>
       <ul>
-        <li>Home</li>
-        <li>Services</li>
-        <li>About Us</li>
-        <li>Contact Us</li>
+        <li data-i18n="footer.home">Home</li>
+        <li data-i18n="footer.services">Services</li>
+        <li data-i18n="footer.about">About Us</li>
+        <li data-i18n="footer.contact">Contact Us</li>
       </ul>
     </div>
     <div class="footer-col">
-      <h4>HELP</h4>
+      <h4 data-i18n="footer.help">HELP</h4>
       <ul>
-        <li>FAQs</li>
-        <li>Terms of Service</li>
-        <li>Report a Problem</li>
-        <li>Privacy Policy</li>
+        <li data-i18n="footer.faqs">FAQs</li>
+        <li data-i18n="footer.terms">Terms of Service</li>
+        <li data-i18n="footer.report">Report a Problem</li>
+        <li data-i18n="footer.privacy">Privacy Policy</li>
       </ul>
     </div>
     <div class="footer-col">
-      <h4>FOLLOW US</h4>
+      <h4 data-i18n="footer.follow">FOLLOW US</h4>
       <ul>
         <li>Facebook</li>
         <li>Twitter</li>
@@ -200,6 +206,6 @@
     <div class="footer-bottom">© All rights reserved by SoftCore</div>
   </footer>
 
-
+  <script src="js/i18n.js"></script>
 </body>
 </html>

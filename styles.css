@@ -698,6 +698,97 @@
 
 
 
+/* Estilos para el toggle de idioma */
+.language-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 4px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.lang-option {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  padding: 5px 8px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.lang-option.active {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.flag-icon {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.toggle-slider {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.toggle-slider.es .toggle-button {
+  left: calc(100% - 18px);
+}
+
+/* Hover effects */
+.lang-option:hover {
+  opacity: 0.9;
+}
+
+.toggle-slider:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .language-toggle {
+    gap: 5px;
+    padding: 3px;
+  }
+  
+  .lang-option {
+    padding: 3px 5px;
+    font-size: 12px;
+  }
+  
+  .flag-icon {
+    width: 15px;
+    height: 15px;
+  }
+}
+
 /* Responsive */
 @media (max-width: 992px) {
     .about-container, .services-container {

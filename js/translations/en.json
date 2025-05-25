@@ -1,0 +1,119 @@
+{
+  "login": "Sign in",
+  "register": "Register",
+  "aboutHeader": "About Us",
+  "servicesHeader": "Services",
+  "testimonialsHeader": "Testimonials",
+  "supportHeader": "Support",
+  
+  "hero": {
+    "title": "The perfect prelude to your next adventure",
+    "button": "VIEW ROOMS"
+  },
+  
+  "about": {
+    "subtitle": "ONE HOTEL. ONE BEGINNING",
+    "title": "Welcome to Custom Host!",
+    "text1": "More than a hotel, we are an intelligent experience.",
+    "text2": "Leave behind the conventional and discover a space where every detail—from temperature to lighting—is personalized before your arrival.",
+    "button": "LEARN MORE"
+  },
+  
+  "services": {
+    "hero": {
+      "title1": "AT CUSTOMHOST, YOUR COMFORT IS NOT STANDARD.",
+      "title2": "IT'S AN EXPERIENCE DESIGNED FOR YOU",
+      "button": "Request a DEMO"
+    },
+    "options": {
+      "title": "Flexible Room Options",
+      "subtitle": "Explore flexible rooms for guests and powerful tools for hoteliers",
+      "smart": {
+        "title": "Smart Controls",
+        "description": "Adjust lighting, temperature, and ambiance with our intuitive controls."
+      },
+      "amenities": {
+        "title": "Custom Amenities",
+        "description": "Choose your preferred toiletries, bedding, and room features."
+      },
+      "tools": {
+        "title": "Hotel Tools",
+        "description": "Powerful dashboard to manage guest preferences and room settings."
+      }
+    },
+    "customization": {
+      "title": "Customization for your guests = More bookings for you",
+      "satisfaction": {
+        "title": "Higher Guest Satisfaction",
+        "description": "Exceed expectations with personalized experiences that drive positive reviews and repeat bookings."
+      },
+      "advantage": {
+        "title": "Competitive Advantage",
+        "description": "Stand out in the market with unique customization options that attract modern travelers."
+      },
+      "management": {
+        "title": "Easy Management",
+        "description": "Intuitive dashboard to manage preferences and deliver exceptional service effortlessly."
+      }
+    },
+    "business": {
+      "title": "Ready to transform your business",
+      "item1": "Quick 5-minute registration process",
+      "item2": "Free onboarding support",
+      "item3": "30-day free trial",
+      "button": "Register in 5 minutes",
+      "note": "No credit card required"
+    }
+  },
+  
+  "affiliated": {
+    "title": "OUR AFFILIATED HOTELS",
+    "text": "CHOOSE FROM A VARIETY OF HOTELS",
+    "button": "Book now"
+  },
+  
+  "testimonials": {
+    "title": "TESTIMONIALS",
+    "juan": "I think it's an innovative system to manage hotels. I loved the service.",
+    "christina": "The system is super easy to use and understand. I had no issues at all.",
+    "abigail": "The system made it much easier to personalize my stay—very comfortable."
+  },
+  
+  "support": {
+    "title": "Support",
+    "faq": {
+      "title": "FREQUENTLY ASKED QUESTIONS",
+      "subtitle": "Find quick answers",
+      "option1": "Room Personalization",
+      "option2": "Technology & Automation",
+      "option3": "Reservations & Payments"
+    }
+  },
+  
+  "footer": {
+    "sections": "SECTIONS",
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "contact": "Contact Us",
+    "help": "HELP",
+    "faqs": "FAQs",
+    "terms": "Terms of Service",
+    "report": "Report a Problem",
+    "privacy": "Privacy Policy",
+    "follow": "FOLLOW US"
+  },
+  
+  "aboutUs": {
+    "heroTitle1": "About Us",
+    "heroTitle2": "Who We Are?",
+    "sectionTitle": "CustomHost Hotel",
+    "description": "Our hotel is an innovative space strategically located to offer a unique experience of personalization and comfort. It combines wellness and elegance with the latest in home automation technology, allowing every detail of your stay to be tailored to your preferences. With rooms equipped with automatic temperature control, personalized services from the moment you arrive, and a modern infrastructure that includes secure access, relaxation areas, and full connectivity.",
+    "services": {
+      "wifi": "WIFI",
+      "system": "24/7 SYSTEM",
+      "customSystem": "CUSTOM SYSTEM",
+      "pool": "POOL"
+    }
+  }
+}
