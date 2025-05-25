@@ -25,7 +25,7 @@
       "title2": "IT'S AN EXPERIENCE DESIGNED FOR YOU",
       "button": "Request a DEMO"
     },
-    "options": {
+    "roomOptions": {
       "title": "Flexible Room Options",
       "subtitle": "Explore flexible rooms for guests and powerful tools for hoteliers",
       "smart": {
@@ -63,6 +63,22 @@
       "item3": "30-day free trial",
       "button": "Register in 5 minutes",
       "note": "No credit card required"
+    },
+    "title": "Our services",
+    "card1": {
+      "title": "Your Stay, Your Rules",
+      "item1": "Control lighting, temperature, and ambiance before arrival",
+      "item2": "Pre-order meals with dietary preferences",
+      "item3": "Select your perfect pillow and sleep setup",
+      "item4": "Customize bathroom amenities and presets",
+      "button": "Start Personalizing Now"
+    },
+    "card2": {
+      "title": "For Hotels: Upgrade Your Guest Experience",
+      "item1": "Attract high-value guests who pay more for customization",
+      "item2": "Easy-to-use dashboard for managing preferences",
+      "item3": "Stand out with branded personalization options",
+      "button": "Register Your Hotel"
     }
   },
   
