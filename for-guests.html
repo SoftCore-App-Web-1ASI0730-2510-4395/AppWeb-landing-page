@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CustomHost - For Guests</title>
+    <link rel="stylesheet" href="about-us.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="for-guests.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+        <header class="custom-header">
+        <div class="header-top">
+            <div class="logo">
+                <a href="index.html">
+                  <img class="imgLogo" src="Assets/img/page/ChatGPT Image 23 abr 2025, 09_42_52-Photoroom 1.png" alt="Logo img">
+                </a>
+            </div>
+            <div class="header-contact">
+                <div class="language-selector">
+                  <div class="language-toggle">
+                    <span class="lang-option" data-lang="en">
+                      <img src="Assets/img/flags/en.png" alt="English" class="flag-icon">
+                      <span>EN</span>
+                    </span>
+                    <div class="toggle-slider" id="language-toggle">
+                      <div class="toggle-button"></div>
+                    </div>
+                    <span class="lang-option" data-lang="es">
+                      <img src="Assets/img/flags/es.png" alt="Español" class="flag-icon">
+                      <span>ES</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="phone"><img src="Assets/img/page/Phone call.png" alt=""> +511 900-800</div>
+                <div class="email"><img src="Assets/img/page/Vector (1).png" alt="">reservas@customhost.com</div>
+                <div class="auth-links">
+                    <a href="#"><img src="Assets/img/page/person.png" alt=""><span data-i18n="login">Sign in</span></a> | <a href="#"><span data-i18n="register">Register</span></a>
+                </div>
+            </div>            
+        </div>
+        
+        <nav class="main-nav">  
+            <a href="about-us.html" data-i18n="aboutHeader">About Us</a>
+            <a href="for-hotels.html">For Hotels</a>
+            <a href="for-guests.html">For Guests</a>
+            <a href="#testimonios" data-i18n="testimonialsHeader">Testimonials</a>
+            <a href="#soporte" data-i18n="supportHeader">Support</a>
+        </nav>
+    </header>
+
+<section class="hero-section">
+    <div class="hero-content">
+        <h1 class="hero-title"><span data-i18n="guests.heroTitle1">Your Stay, Your Way</span><br><span data-i18n="guests.heroTitle2">Personalize Before You Arrive</span></h1>
+         <a href="#" class="cta-button"><span data-i18n="hotels.cta">Start Personalization Now</span> →</a>       
+      </div>
+</section>
+
+<!-- Welcome Section -->
+<section class="customhost-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-content">
+                <h1 data-i18n="guests.sectionTitle">Welcome to the Future of Hotel Stays</h1>
+                <p data-i18n="guests.description">
+                    At CustomHost, we believe that every guest is unique — and your hotel experience should reflect that. With our smart system, you can personalize everything from room temperature to lighting, choose your preferred pillow type, pre-order meals, and even set up your own access preferences before arriving.
+                </p>
+                <ul class="guest-features">
+                    <li><i class="fas fa-lightbulb"></i> Adjust lighting and ambiance to your mood</li>
+                    <li><i class="fas fa-bed"></i> Choose your ideal sleep setup</li>
+                    <li><i class="fas fa-utensils"></i> Pre-select meals based on dietary preferences</li>
+                    <li><i class="fas fa-fingerprint"></i> Access your room using biometric authentication</li>
+                    <li><i class="fas fa-wifi"></i> Seamless high-speed internet connection</li>
+                </ul>
+                <p data-i18n="guests.description2">
+                    No more waiting at check-in or adjusting settings after you arrive. Everything is ready for you when you get there — just like home, but better.
+                </p>
+                <a href="#" class="cta-button"><span data-i18n="guests.cta">Start Personalizing My Stay</span> →</a>
+            </div>
+            <div class="col-md-6 image-content">
+                <img src="Assets/img/Servicios/Hero.jpg" alt="Imagen de habitación inteligente" class="img-fluid rounded shadow-sm" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="affiliated-hotels-section">
+    <h2 class="affiliated-title">OUR AFFILIATED HOTELS</h2>
+    <div class="hotel-logos-container">
+        <!-- Primer fila -->
+        <div class="hotel-logo-card">
+            <img src="Assets/img/page/La-Orchila.png" alt="Logo de La Orchila Hotel">
+            <div class="hotel-details hidden">
+                <h3 class="hotel-name">La Orchila Hotel</h3>
+                <p class="hotel-description">A luxurious retreat with stunning views and personalized service.</p>
+            </div>
+        </div>
+        <div class="hotel-logo-card">
+            <img src="Assets/img/page/Alta-Pinta.png" alt="Logo de Alta Pinta Hotel">
+            <div class="hotel-details hidden">
+                <h3 class="hotel-name">Alta Pinta Hotel</h3>
+                <p class="hotel-description">Elegant accommodations in the heart of the city.</p>
+            </div>
+        </div>
+        <div class="hotel-logo-card">
+            <img src="Assets/img/page/Grand-hotel.png" alt="Logo de Grand Hotel">
+            <div class="hotel-details hidden">
+                <h3 class="hotel-name">Grand Hotel</h3>
+                <p class="hotel-description">A classic hotel offering comfort and style.</p>
+            </div>
+        </div>
+
+        <!-- Segunda fila -->
+        <div class="hotel-logo-card">
+            <img src="Assets/img/page/Hidden-Hotel.png" alt="Logo de Hidden Hotel">
+            <div class="hotel-details hidden">
+                <h3 class="hotel-name">Hidden Hotel</h3>
+                <p class="hotel-description">A hidden gem with unique charm and hospitality.</p>
+            </div>
+        </div>
+        <div class="hotel-logo-card">
+            <img src="Assets/img/page/The-Hotel.png" alt="Logo de The Hotel">
+            <div class="hotel-details hidden">
+                <h3 class="hotel-name">The Hotel</h3>
+                <p class="hotel-description">Cozy and luxurious stays for every traveler.</p>
+            </div>
+        </div>
+        <div class="hotel-logo-card">
+            <img src="Assets/img/page/Margarita-Hotel.png" alt="Logo de Margarita Hotel Boutique">
+            <div class="hotel-details hidden">
+                <h3 class="hotel-name">Margarita Hotel Boutique</h3>
+                <p class="hotel-description">An intimate boutique experience with modern amenities.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Texto y botón al final -->
+    <p class="selection-text">CHOOSE FROM A VARIETY OF HOTELS</p>
+    <a href="#" class="btn-orange">Book now</a>
+</section>
+
+
+<!-- Room Options -->
+<section class="opciones" id="rooms">
+    <div class="container text-center">
+    <h2 data-i18n="guests.rooms.title" class="mb-4">Choose Your Room Type</h2>
+    <p data-i18n="guests.rooms.subtitle" class="text-muted mb-5">Find the perfect space for your stay</p>
+    <div class="opciones-container row g-4 justify-content-center">
+        <div class="col-md-4">
+            <div class="opcion card shadow-sm border-0 rounded-3 hover-lift">
+                <img src="Assets/img/Servicios/Hero.jpg" alt="Single Room" class="card-img-top photo">
+                <div class="card-body">
+                    <h4 class="card-title">Single Room</h4>
+                    <p class="card-text">Perfect for solo travelers looking for comfort and simplicity.</p>
+                    <i class="fas fa-wifi icon me-2"></i> <!-- Icono de Wi-Fi -->
+                    <i class="fas fa-utensils icon"></i> <!-- Icono de desayuno -->
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="opcion card shadow-sm border-0 rounded-3 hover-lift">
+                <img src="Assets/img/Servicios/Hero.jpg" alt="Double Room" class="card-img-top photo">
+                <div class="card-body">
+                    <h4 class="card-title">Double Room</h4>
+                    <p class="card-text">Ideal for couples or friends traveling together in style.</p>
+                    <i class="fas fa-wifi icon me-2"></i> <!-- Icono de Wi-Fi -->
+                    <i class="fas fa-minibar icon"></i> <!-- Icono de minibar -->
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="opcion card shadow-sm border-0 rounded-3 hover-lift">
+                <img src="Assets/img/Servicios/Hero.jpg" alt="Suite" class="card-img-top photo">
+                <div class="card-body">
+                    <h4 class="card-title">Premium Suite</h4>
+                    <p class="card-text">Luxury living with extra space and top-tier amenities.</p>
+                    <i class="fas fa-spa icon me-2"></i> <!-- Icono de spa -->
+                    <i class="fas fa-concierge-bell icon"></i> <!-- Icono de concierge -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Texto y botón al final -->
+    <p class="selection-text">CHOOSE FROM A VARIETY OF ROOMS</p>
+    <a href="#" class="btn-orange">Book now</a>
+</section>
+
+<!-- Testimonios -->
+<section class="testimonios" id="testimonios">
+    <div class="container text-center">
+        <h2 data-i18n="testimonials.title" class="mb-5">TESTIMONIALS</h2>
+        <div class="testimonios-container row g-4 justify-content-center">
+            <div class="col-md-4">
+                <div class="testimonio card border-0 shadow-sm p-4 rounded">
+                    <img src="Assets/img/page/user3.jpg" alt="Juan Velásquez" class="rounded-circle mx-auto mb-3" width="80">
+                    <h4>Juan Velásquez</h4>
+                    <p data-i18n="testimonials.juan">I think it's an innovative system to manage hotels. I loved the service.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonio card border-0 shadow-sm p-4 rounded">
+                    <img src="Assets/img/page/user1.jpg" alt="Christina Aguilera" class="rounded-circle mx-auto mb-3" width="80">
+                    <h4>Christina Aguilera</h4>
+                    <p data-i18n="testimonials.christina">The system is super easy to use and understand. I had no issues at all.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonio card border-0 shadow-sm p-4 rounded">
+                    <img src="Assets/img/page/user2.jpg" alt="Abigail Guzman" class="rounded-circle mx-auto mb-3" width="80">
+                    <h4>Abigail Guzman</h4>
+                    <p data-i18n="testimonials.abigail">The system made it much easier to personalize my stay—very comfortable.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-col">
+        <img src="Assets/img/Servicios/LightLogo.png" alt="CustomHost Logo" class="footer-logo">
+        <p>contact@customhost.com<br>+51 995 589 830</p>
+    </div>
+    <div class="footer-col">
+        <h4 data-i18n="footer.sections">SECTIONS</h4>
+        <ul>
+            <li data-i18n="footer.home">Home</li>
+            <li data-i18n="footer.guests">For Guests</li>
+            <li data-i18n="footer.about">About Us</li>
+            <li data-i18n="footer.contact">Contact Us</li>
+        </ul>
+    </div>
+    <div class="footer-col">
+        <h4 data-i18n="footer.help">HELP</h4>
+        <ul>
+            <li data-i18n="footer.faqs">FAQs</li>
+            <li data-i18n="footer.terms">Terms of Service</li>
+            <li data-i18n="footer.report">Report a Problem</li>
+            <li data-i18n="footer.privacy">Privacy Policy</li>
+        </ul>
+    </div>
+    <div class="footer-col">
+        <h4 data-i18n="footer.follow">FOLLOW US</h4>
+        <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>YouTube</li>
+        </ul>
+    </div>
+    <div class="footer-bottom">© All rights reserved by SoftCore</div>
+</footer>
+<script src="js/hotel-cards.js"></script>
+<script src="js/i18n.js"></script>
+</body>
+</html>
