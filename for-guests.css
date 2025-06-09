@@ -1,0 +1,16 @@
+/* for-guests.css */
+.guest-hero {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.personalization-section {
+  background-color: #e8f5e9;
+  padding: 40px 20px;
+}
+
+.feature-list li {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CustomHost - For Hotels</title>
+
+    <!-- Estilos generales -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Componentes reutilizables -->
+    <link rel="stylesheet" href="components.css">
+
+    <!-- Estilo específico para hoteles -->
+    <link rel="stylesheet" href="for-hotels.css">
+
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Iconos (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Tu contenido aquí -->
+</body>
+</html>
+
+<body>
+     <header class="custom-header">
+        <div class="header-top">
+            <div class="logo"><img class="imgLogo" src="Assets/img/page/ChatGPT Image 23 abr 2025, 09_42_52-Photoroom 1.png" alt="Logo img"></div>
+            <div class="header-contact">
+                <div class="language-selector">
+                  <div class="language-toggle">
+                    <span class="lang-option" data-lang="en">
+                      <img src="Assets/img/flags/en.png" alt="English" class="flag-icon">
+                      <span>EN</span>
+                    </span>
+                    <div class="toggle-slider" id="language-toggle">
+                      <div class="toggle-button"></div>
+                    </div>
+                    <span class="lang-option" data-lang="es">
+                      <img src="Assets/img/flags/es.png" alt="Español" class="flag-icon">
+                      <span>ES</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="phone"><img src="Assets/img/page/Phone call.png" alt=""> +511 900-800</div>
+                <div class="email"><img src="Assets/img/page/Vector (1).png" alt="">reservas@customhost.com</div>
+                <div class="auth-links">
+                    <a href="#"><img src="Assets/img/page/person.png" alt=""><span data-i18n="login">Sign in</span></a> | <a href="#"><span data-i18n="register">Register</span></a> 
+                </div>
+            </div>            
+        </div>
+        
+        <nav class="main-nav">
+            <a href="about-us.html" data-i18n="aboutHeader">About Us</a>
+            <a href="for-hotels.html" data-i18n="hotelsHeader" class="active">Elevate Your Hotel</a>
+            <a href="#testimonios" data-i18n="testimonialsHeader">Testimonials</a>
+            <a href="#soporte" data-i18n="supportHeader">Support</a>
+        </nav>
+    </header>
+
+<section class="hero-section">
+    <div class="hero-content">
+        <h1 class="hero-title"><span data-i18n="hotels.heroTitle1">Elevate Your Hotel</span><br><span data-i18n="hotels.heroTitle2">Personalize Guest Experiences</span></h1>
+        <p class="hero-subtitle">Transform your hotel into an intelligent space where every detail is tailored to your guests' preferences.</p>
+        <a href="#" class="cta-button"><span data-i18n="hotels.cta">Start Elevating Now</span> →</a>
+    </div>
+</section>
+
+<section class="services-section">
+    <h2 class="service-title" data-i18n="hotels.services.title">How We Help Hotels</h2>
+    <div class="services-container">
+        <div class="service-card">
+            <img src="Assets/img/page/register-hotel.png" alt="Your Stay, Your Rules">
+            <h3 data-i18n="hotels.services.card1.title">Enhance Guest Satisfaction</h3>
+            <ul>
+                <li><i class="fas fa-lightbulb"></i> <span data-i18n="hotels.services.card1.item1">Control lighting, temperature, and ambiance before arrival</span></li>
+                <li><i class="fas fa-utensils"></i> <span data-i18n="hotels.services.card1.item2">Pre-order meals with dietary preferences</span></li>
+                <li><i class="fas fa-bed"></i> <span data-i18n="hotels.services.card1.item3">Select your perfect pillow and sleep setup</span></li>
+                <li><i class="fas fa-toilet-paper"></i> <span data-i18n="hotels.services.card1.item4">Customize bathroom amenities and presets</span></li>
+            </ul>
+            <a href="#" class="btn-orange" data-i18n="hotels.services.card1.button">Learn More</a>
+        </div>
+        <div class="service-card">
+            <img src="Assets/img/page/personalize-img.png" alt="For Hotels: Upgrade Your Guest Experience">
+            <h3 data-i18n="hotels.services.card2.title">Streamline Hotel Operations</h3>
+            <ul>
+                <li><i class="fas fa-star"></i> <span data-i18n="hotels.services.card2.item1">Attract high-value guests who pay more for customization</span></li>
+                <li><i class="fas fa-chart-line"></i> <span data-i18n="hotels.services.card2.item2">Easy-to-use dashboard for managing preferences</span></li>
+                <li><i class="fas fa-crown"></i> <span data-i18n="hotels.services.card2.item3">Stand out with branded personalization options</span></li>
+            </ul>
+            <a href="#" class="btn-orange" data-i18n="hotels.services.card2.button">Register Your Hotel</a>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="pricing-section">
+    <h2 class="pricing-title">Pricing</h2>
+    <div class="pricing-container">
+        <div class="pricing-card">
+            <h3>Starter</h3>
+            <p>Manage up to 50 rooms and accounts for 20 employees. Perfect for starting businesses.</p>
+            <ul>
+                <li>Manage up to 50 rooms</li>
+                <li>7 employee accounts</li>
+                <li>Perfect for starting businesses</li>
+            </ul>
+            <a href="#" class="pricing-button">Sign Up</a>
+        </div>
+        <div class="pricing-card">
+            <h3>Standard</h3>
+            <p>Manage up to 100 rooms and get 15 employee accounts. Ideal for established businesses.</p>
+            <ul>
+                <li>Manage up to 100 rooms</li>
+                <li>15 employee accounts</li>
+                <li>Good for already established businesses</li>
+            </ul>
+            <a href="#" class="pricing-button">Sign Up</a>
+        </div>
+        <div class="pricing-card">
+            <h3>Exclusive</h3>
+            <p>Manage up to 200 rooms, 30 employee accounts. Designed for larger hotels.</p>
+            <ul>
+                <li>Manage up to 200 rooms</li>
+                <li>30 employee accounts</li>
+                <li>For the bigger structures</li>
+            </ul>
+            <a href="#" class="pricing-button">Sign Up</a>
+        </div>
+    </div>
+</section>
+
+<!-- Benefits Section -->
+<section class="customizaciones" id="customization">
+    <h2 class="services.customization.title">Customization for your guests = More bookings for you</h2>
+    <div class="customizaciones-container">
+        <div class="customizacion">
+            <i class="fas fa-star"></i>
+            <h3>Higher Guest Satisfaction</h3>
+            <p>Exceed expectations with personalized experiences that drive positive reviews and repeat bookings.</p>
+        </div>
+        <div class="customizacion">
+            <i class="fas fa-trophy"></i>
+            <h3>Competitive Advantage</h3>
+            <p>Stand out in the market with unique customization options that attract modern travelers.</p>
+        </div>
+        <div class="customizacion">
+            <i class="fas fa-wrench"></i>
+            <h3>Easy Management</h3>
+            <p>Intuitive dashboard to manage preferences and deliver exceptional service effortlessly.</p>
+        </div>        
+    </div>
+	<div class="negocios">
+		<div class="negocios-izq">
+			<h3 data-i18n="services.business.title">Ready to transform your business</h3>
+			<ul>
+				<li data-i18n="services.business.item1">Quick 5-minute registration process</li>
+				<li data-i18n="services.business.item2">Free onboarding support</li>
+				<li data-i18n="services.business.item3">30-day free trial</li>
+			</ul>
+		</div>
+		<div class="negocios-der">
+			<a href="" class="register-button" data-i18n="services.business.button">Register in 5 minutes</a>
+			<p data-i18n="services.business.note">No credit card required</p>
+		</div>
+	</div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonios" id="testimonios">
+    <h2 data-i18n="testimonials.title">TESTIMONIALS</h2>
+    <div class="testimonios-container">
+      <div class="testimonio">
+        <img src="Assets/img/page/user3.jpg" alt="Juan Velásquez">
+        <h4>Juan Velásquez</h4>
+        <p data-i18n="testimonials.juan">I think it's an innovative system to manage hotels. I loved the service.</p>
+      </div>
+      <div class="testimonio">
+        <img src="Assets/img/page/user1.jpg" alt="Christina Aguilera">
+        <h4>Christina Aguilera</h4>
+        <p data-i18n="testimonials.christina">The system is super easy to use and understand. I had no issues at all.</p>
+      </div>
+      <div class="testimonio">
+        <img src="Assets/img/page/user2.jpg" alt="Abigail Guzman">
+        <h4>Abigail Guzman</h4>
+        <p data-i18n="testimonials.abigail">The system made it much easier to personalize my stay—very comfortable.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-col">
+      <img src="Assets/img/Servicios/LightLogo.png" alt="CustomHost Logo" class="footer-logo">
+      <p>contact@customhost.com<br>+51 995 589 830</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer.sections">SECTIONS</h4>
+      <ul>
+        <li data-i18n="footer.home">Home</li>
+        <li data-i18n="footer.hotels">For Hotels</li>
+        <li data-i18n="footer.about">About Us</li>
+        <li data-i18n="footer.contact">Contact Us</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer.help">HELP</h4>
+      <ul>
+        <li data-i18n="footer.faqs">FAQs</li>
+        <li data-i18n="footer.terms">Terms of Service</li>
+        <li data-i18n="footer.report">Report a Problem</li>
+        <li data-i18n="footer.privacy">Privacy Policy</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer.follow">FOLLOW US</h4>
+      <ul>
+        <li>Facebook</li>
+        <li>Twitter</li>
+        <li>Instagram</li>
+        <li>YouTube</li>
+      </ul>
+    </div>
+    <div class="footer-bottom">© All rights reserved by SoftCore</div>
+  </footer>
+
+<script src="js/i18n.js"></script>
+</body>
+</html>
