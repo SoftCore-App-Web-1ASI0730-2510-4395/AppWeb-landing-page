@@ -1,37 +1,6 @@
 /* for-hotels.css */
 
-/* Hero Section */
-.hero-section {
-    background-color: #e3f2fd;
-    padding: 80px 20px;
-    text-align: center;
-}
 
-.hero-title {
-    font-size: 2.5rem;
-    color: #1565c0;
-}
-
-.hero-subtitle {
-    font-size: 1.2rem;
-    color: #333;
-    margin: 20px 0;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #2196f3;
-    color: white;
-    border-radius: 5px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #1976d2;
-}
 
 /* Service Cards */
 .service-card {
