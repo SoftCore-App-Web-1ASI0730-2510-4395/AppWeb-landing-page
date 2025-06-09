@@ -1,36 +1,69 @@
-/* for-hotels.css */
-
-
-
 /* Service Cards */
 .service-card {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    text-align: center; /* Centra todo el contenido */
 }
 
 .service-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada al hover */
 }
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: white;
+    padding: 12px 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: #FB8C00;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cta-button .arrow {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff7043;
+    color: white;
+}
+
+.cta-button:hover .arrow {
+    transform: translateX(5px);
+    color: white;
+}
+
 
 /* Estilos generales para la sección de precios */
 .pricing-section {
     background-color: #f4f4f9;
     padding: 60px 20px;
+    text-align: center; /* Centra el título principal */
 }
 
 .pricing-title {
-    text-align: center;
     font-size: 2.5rem;
-    color: #1565c0;
+    color: #FB8C00;
+    margin-bottom: 40px; /* Espacio entre el título y los planes */
 }
 
 .pricing-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 20px; /* Espacio entre tarjetas */
 }
 
 .pricing-card {
@@ -38,13 +71,14 @@
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 30%;
+    width: calc(33.33% - 20px); /* Distribuye 3 tarjetas por fila */
     text-align: center;
     transition: transform 0.3s ease;
 }
 
 .pricing-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada al hover */
 }
 
 .pricing-card h3 {
@@ -65,22 +99,36 @@
 .pricing-card li {
     margin-bottom: 10px;
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre ícono y texto */
+}
+
+.pricing-card li::before {
+    content: ""; /* Agrega un icono o marcador */
+    width: 20px;
+    height: 20px;
+    background-color: #FB8C00;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
 }
 
 .pricing-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #2196f3;
+    background-color: #FB8C00;
     color: white;
     border-radius: 5px;
     font-weight: bold;
     text-decoration: none;
     margin-top: 20px;
     transition: background-color 0.3s ease;
+    width: 100%; /* Hace que el botón ocupe todo el ancho */
 }
 
 .pricing-button:hover {
-    background-color: #1976d2;
+    background-color: #FFA726; /* Cambia el color al hacer hover */
 }
 
 .customizaciones {
@@ -109,10 +157,12 @@
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
+    padding: 20px; /* Añade espacio interno */
 }
 
 .customizacion:hover {
     transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada al hover */
 }
 
 .customizacion img {
@@ -140,9 +190,7 @@
     margin: 20px 24px;
 }
 
-
-/*Customization*/
-
+/* Customization Section */
 .negocios {
     background-color: #cfd8dc;
     padding: 35px;
@@ -191,7 +239,7 @@
 
 .register-button {
     display: inline-block;
-    background-color: #1F2937;
+    background-color: #FB8C00;
     color: #E5E7EB;
     padding: 20px;
     font-size: 0.875rem;
