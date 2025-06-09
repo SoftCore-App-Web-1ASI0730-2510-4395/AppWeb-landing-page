@@ -1,87 +1,505 @@
-/* for-guests.css */
-.guest-hero {
-  background-color: #4caf50;
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
+/* === Reset básico === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
+body {
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* === Header styles === */
+.custom-header {
+    background-color: #263238;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    border-bottom: 0.5px solid #263238;
+}
+
+.logo {
+    height: 50px;
+    display: flex;
+}
+
+.imgLogo {
+    height: 90px;
+    width: auto;
+    max-width: 180px;
+    margin-left: -40px;
+    object-fit: contain;
+}
+
+.header-contact {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+}
+
+.header-contact img {
+    height: 14px;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.auth-links {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.auth-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.auth-links a:hover {
+    color: #e74c3c;
+}
+
+.auth-links a img {
+    height: 16px;
+    width: auto;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background-color: #263238;
+    padding: 3px 0;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    position: relative;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    padding: 5px 0;
+}
+
+.main-nav a:hover {
+    color: orange;
+}
+
+.main-nav a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #e74c3c;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.main-nav a:hover:after {
+    width: 100%;
+}
+
+/* === Hero Section – Sin parpadeo === */
+.hero-section {
+    background-image: url('../Assets/img/Servicios/Hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    z-index: 0; /* No usar z-index alto si no hay overlays */
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay oscuro */
+    z-index: 1;
+    pointer-events: none;
+    will-change: auto;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #FB8C00;
+    color: #37474F;
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: transparent;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.arrow {
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover .arrow {
+    transform: translateX(5px);
+}
+
+/* === Personalization Section === */
 .personalization-section {
-  background-color: #e8f5e9;
-  padding: 40px 20px;
+    background-color: #f1f8f1;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.personalization-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #263238;
+    font-weight: 600;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+    max-width: 600px;
 }
 
 .feature-list li {
-  margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #37474f;
 }
 
-/*Room Options*/
+.feature-list i {
+    color: #4caf50;
+    font-size: 1.2rem;
+}
+
+/* === Room Options Section === */
 .opciones {
-    padding: 4rem 2rem;
-    background-color: white;
+    padding: 60px 20px;
+    background-color: #fff;
     text-align: center;
 }
 
 .opciones h2 {
-    font-size: 2rem;
-    margin-bottom: 1.6rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
     color: #263238;
 }
 
 .opciones h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 3rem;
     font-weight: 400;
-    color: #263238;
+    color: #777;
 }
 
 .opciones-container {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
-    justify-content: center;
 }
 
 .opcion {
-    background-color: #cfd8dc;
-    max-width: 400px;
+    background-color: #f9f9f9;
+    max-width: 350px;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
     transition: transform 0.3s ease;
 }
 
 .opcion:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-.opcion .photo {
+.photo {
     width: 100%;
-    height: 180px;
-    border-radius: 12px 12px 0 0;
+    height: 200px;
     object-fit: cover;
-} 
+}
 
 .opcion h4 {
     font-size: 1.25rem;
-    font-weight: 400;
+    font-weight: 600;
     color: #263238;
+    margin: 15px 24px 10px;
     text-align: left;
-    margin: 15px 24px 20px;
 }
 
 .opcion p {
-    font-size: 0.875rem;
-    line-height: 1.5;
-    color: #37474f;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #555;
+    margin: 0 24px 20px;
     text-align: left;
-    margin: 20px 24px;
 }
 
-.opcion .icon {
-    height: 25px;
+.icon {
+    height: 20px;
     width: auto;
-    display: flex;
-    align-items: flex-start;
     margin-left: 24px;
     margin-bottom: 20px;
+}
+
+/* === Welcome Section === */
+.customhost-section {
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 15px;
+}
+
+.text-content h1 {
+    font-size: 2.5rem;
+    color: #263238;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.guest-features li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #37474f;
+}
+
+.guest-features i {
+    color: #4caf50;
+    font-size: 1.2rem;
+}
+
+.image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+/* Hover efecto en tarjetas */
+.hover-lift {
+    transition: transform 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+}
+
+/* === Affiliated Hotels Section – Con efecto hover === */
+.affiliated-hotels-section {
+    padding: 60px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.affiliated-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    color: #37474F;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.hotel-logos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hotel-logo-card {
+    position: relative;
+    width: calc(33.33% - 20px);
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    cursor: pointer;
+    aspect-ratio: 1 / 1; /* Cuadrado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.hotel-logo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+}
+
+.hotel-logo-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Detalles que aparecen al hacer hover */
+.hotel-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    transition: all 0.4s ease;
+}
+
+.hotel-logo-card:hover .hotel-details {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hotel-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.hotel-description {
+    font-size: 0.9rem;
+    color: #e0e0e0;
+}
+
+/* Texto y botón al final */
+.selection-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: #37474F;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.btn-orange {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ff9800;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-orange:hover {
+    background-color: #e68900;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .hotel-logo-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .hotel-logo-card {
+        width: 100%;
+    }
+
+    .hero-section {
+        min-height: 400px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
 }
