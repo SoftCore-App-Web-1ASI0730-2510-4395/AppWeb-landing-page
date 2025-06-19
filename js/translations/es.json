@@ -131,5 +131,19 @@
       "customSystem": "SISTEMA PERSONALIZADO",
       "pool": "PISCINA"
     }
+  },
+  
+  "guests": {
+    "heroTitle1": "Tu Estancia, a tu Manera",
+    "heroTitle2": "Personaliza Antes de Llegar",
+    "cta": "Comienza a Personalizar Ahora",
+    "sectionTitle": "Bienvenido al Futuro de las Estancias en Hoteles",
+    "description": "En CustomHost, creemos que cada huésped es único — y tu experiencia hotelera debe reflejarlo. Con nuestro sistema inteligente, puedes personalizar todo, desde la temperatura de la habitación hasta la iluminación, elegir tu tipo de almohada preferida, preordenar comidas e incluso configurar tus preferencias de acceso antes de llegar.",
+    "feature1": "Ajusta la iluminación y el ambiente a tu estado de ánimo",
+    "feature2": "Elige tu configuración de sueño ideal",
+    "feature3": "Preselecciona comidas según tus preferencias dietéticas",
+    "feature4": "Accede a tu habitación usando autenticación biométrica",
+    "feature5": "Conexión a internet de alta velocidad sin interrupciones",
+    "description2": "Vive el siguiente nivel de confort y conveniencia. Tus preferencias, tu estancia, a tu manera."
   }
 }

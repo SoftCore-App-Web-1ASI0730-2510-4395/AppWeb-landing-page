@@ -131,5 +131,19 @@
       "customSystem": "CUSTOM SYSTEM",
       "pool": "POOL"
     }
+  },
+  
+  "guests": {
+    "heroTitle1": "Your Stay, Your Way",
+    "heroTitle2": "Personalize Before You Arrive",
+    "cta": "Start Personalization Now",
+    "sectionTitle": "Welcome to the Future of Hotel Stays",
+    "description": "At CustomHost, we believe that every guest is unique — and your hotel experience should reflect that. With our smart system, you can personalize everything from room temperature to lighting, choose your preferred pillow type, pre-order meals, and even set up your own access preferences before arriving.",
+    "feature1": "Adjust lighting and ambiance to your mood",
+    "feature2": "Choose your ideal sleep setup",
+    "feature3": "Pre-select meals based on dietary preferences",
+    "feature4": "Access your room using biometric authentication",
+    "feature5": "Seamless high-speed internet connection",
+    "description2": "Experience the next level of comfort and convenience. Your preferences, your stay, your way."
   }
 }
