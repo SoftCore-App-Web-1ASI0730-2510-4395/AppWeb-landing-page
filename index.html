@@ -36,12 +36,19 @@
             </div>            
         </div>
         
-        <nav class="main-nav">
-            <a href="about-us.html" data-i18n="aboutHeader">About Us</a>
-            <a href="servicios.html" data-i18n="servicesHeader">Services</a>
-            <a href="#testimonios" data-i18n="testimonialsHeader">Testimonials</a>
-            <a href="#soporte" data-i18n="supportHeader">Support</a>
-        </nav>
+        <div class="nav-container">
+            <div class="hamburger-menu" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="main-nav" id="main-nav">
+                <a href="about-us.html" data-i18n="aboutHeader">About Us</a>
+                <a href="servicios.html" data-i18n="servicesHeader">Services</a>
+                <a href="#testimonios" data-i18n="testimonialsHeader">Testimonials</a>
+                <a href="#soporte" data-i18n="supportHeader">Support</a>
+            </nav>
+        </div>
     </header>
 <section class="hero-section">
     <div class="hero-content">
@@ -207,5 +214,24 @@
   </footer>
 
   <script src="js/i18n.js"></script>
+  <script>
+    // Menú hamburguesa
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const mainNav = document.getElementById('main-nav');
+
+    hamburgerMenu.addEventListener('click', function() {
+        hamburgerMenu.classList.toggle('active');
+        mainNav.classList.toggle('active');
+    });
+
+    // Cerrar menú al hacer clic en un enlace
+    const navLinks = document.querySelectorAll('.main-nav a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            hamburgerMenu.classList.remove('active');
+            mainNav.classList.remove('active');
+        });
+    });
+  </script>
 </body>
 </html>
