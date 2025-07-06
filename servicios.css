@@ -82,6 +82,42 @@
 }
 
 /* Navegación principal */
+.nav-container {
+    background-color: #263238;
+    position: relative;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 15px 20px;
+    background-color: #263238;
+    border: none;
+    z-index: 1000;
+}
+
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: 0.3s;
+    transform-origin: center;
+}
+
+.hamburger-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
 .main-nav {
     display: flex;
     justify-content: center;
@@ -501,6 +537,73 @@
         margin-bottom: 40px;
         width: 100%;
     }
+    
+    /* Ocultar elementos del header excepto logo y selector de idioma */
+    .phone, .email, .auth-links {
+        display: none;
+    }
+    
+    .header-contact {
+        gap: 0;
+    }
+    
+    /* Ajustar header-top para dar más espacio al logo */
+    .header-top {
+        padding: 20px 25px;
+        min-height: 100px;
+    }
+    
+    .logo {
+        height: auto;
+        display: flex;
+        align-items: center;
+    }
+    
+    .imgLogo {
+        height: 80px;
+        width: auto;
+        max-width: 160px;
+        margin-left: -20px;
+        object-fit: contain;
+    }
+    
+    /* Mostrar menú hamburguesa desde tablets */
+    .hamburger-menu {
+        display: flex;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        z-index: 1001;
+    }
+    
+    .main-nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #263238;
+        padding: 20px;
+        gap: 15px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+    
+    .main-nav.active {
+        display: flex;
+    }
+    
+    .main-nav a {
+        text-align: center;
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        font-size: 16px;
+    }
+    
+    .main-nav a:last-child {
+        border-bottom: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -514,6 +617,76 @@
     
     .section-subtitle {
         font-size: 1.2rem;
+    }
+    
+    /* Mantener ocultos teléfono, email y auth-links */
+    .phone, .email, .auth-links {
+        display: none;
+    }
+    
+    .header-contact {
+        gap: 0;
+    }
+    
+    .header-top {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 20px;
+        min-height: 90px;
+    }
+    
+    /* Ajustar logo para móviles */
+    .logo {
+        height: auto;
+        display: flex;
+        align-items: center;
+    }
+    
+    .imgLogo {
+        height: 70px;
+        width: auto;
+        max-width: 140px;
+        margin-left: -15px;
+        object-fit: contain;
+    }
+    
+    /* Menú hamburguesa para móviles */
+    .hamburger-menu {
+        display: flex;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1001;
+    }
+    
+    .main-nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #263238;
+        padding: 20px;
+        gap: 15px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+    
+    .main-nav.active {
+        display: flex;
+    }
+    
+    .main-nav a {
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    .main-nav a:last-child {
+        border-bottom: none;
     }
 }
 
@@ -553,10 +726,46 @@
 }
 
 @media (max-width: 480px) {
+    /* Mantener ocultos teléfono, email y auth-links */
+    .phone, .email, .auth-links {
+        display: none;
+    }
+    
     .header-contact {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
+        gap: 0;
+    }
+    
+    /* Ajustar header para móviles pequeños */
+    .header-top {
+        padding: 12px 15px;
+        min-height: 80px;
+    }
+    
+    /* Logo más pequeño para móviles */
+    .logo {
+        height: auto;
+        display: flex;
+        align-items: center;
+    }
+    
+    .imgLogo {
+        height: 60px;
+        width: auto;
+        max-width: 120px;
+        margin-left: -10px;
+        object-fit: contain;
+    }
+    
+    /* Hamburger más pequeño */
+    .hamburger-menu {
+        top: 18px;
+        right: 15px;
+        padding: 10px 15px;
+    }
+    
+    .hamburger-menu span {
+        width: 22px;
+        height: 2px;
     }
     
     .main-nav {
