@@ -143,6 +143,42 @@
 }
 
 /* Navegación principal */
+.nav-container {
+    background-color: #263238;
+    position: relative;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 15px 20px;
+    background-color: #263238;
+    border: none;
+    z-index: 1000;
+}
+
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: 0.3s;
+    transform-origin: center;
+}
+
+.hamburger-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
 .main-nav {
     display: flex;
     justify-content: center;
@@ -351,3 +387,381 @@
     border-top: 1px solid #eceff155;
     margin-top: 2rem;
   }
+
+  /* ========== MEDIA QUERIES PARA DISEÑO RESPONSIVO ========== */
+
+/* Tablets y pantallas medianas (hasta 1024px) */
+@media (max-width: 1024px) {
+  .header-top {
+    padding: 12px 25px;
+  }
+  
+  .header-contact {
+    gap: 20px;
+  }
+  
+  .main-nav {
+    gap: 30px;
+  }
+  
+  .customhost-section {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+  
+  .hero-section h1 {
+    font-size: 45px;
+  }
+  
+  .text-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .service-icons-bar {
+    width: 90%;
+    margin: -2rem auto 3rem;
+  }
+}
+
+/* Tablets pequeñas (hasta 992px) */
+@media (max-width: 992px) {
+  .customhost-section {
+    flex-direction: column;
+    padding: 3rem 4rem;
+    text-align: center;
+    gap: 3rem;
+  }
+  
+  .text-content, .image-content {
+    flex: 1 1 100%;
+  }
+  
+  .image-content {
+    order: -1;
+  }
+  
+  .service-icons-bar {
+    width: 95%;
+    gap: 1.5rem;
+    padding: 1.5rem 1rem;
+  }
+  
+  .icon-item {
+    font-size: 0.9rem;
+  }
+  
+  .service-icons-bar .material-icons {
+    font-size: 60px;
+  }
+  
+  /* Ocultar elementos del header excepto logo y selector de idioma */
+  .phone, .email, .auth-links {
+    display: none;
+  }
+  
+  .header-contact {
+    gap: 0;
+  }
+  
+  /* Ajustar header-top para dar más espacio al logo */
+  .header-top {
+    padding: 20px 25px;
+    min-height: 100px;
+  }
+  
+  .logo {
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .imgLogo {
+    height: 80px;
+    width: auto;
+    max-width: 160px;
+    margin-left: -20px;
+    object-fit: contain;
+  }
+  
+  /* Mostrar menú hamburguesa desde tablets */
+  .hamburger-menu {
+    display: flex;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    z-index: 1001;
+  }
+  
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #263238;
+    padding: 20px;
+    gap: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+  
+  .main-nav.active {
+    display: flex;
+  }
+  
+  .main-nav a {
+    text-align: center;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    font-size: 16px;
+  }
+  
+  .main-nav a:last-child {
+    border-bottom: none;
+  }
+}
+
+/* Móviles grandes y tablets pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    min-height: 90px;
+  }
+  
+  /* Mantener ocultos teléfono, email y auth-links */
+  .phone, .email, .auth-links {
+    display: none;
+  }
+  
+  .header-contact {
+    gap: 0;
+  }
+  
+  /* Ajustar logo para móviles */
+  .logo {
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .imgLogo {
+    height: 70px;
+    width: auto;
+    max-width: 140px;
+    margin-left: -15px;
+    object-fit: contain;
+  }
+  
+  /* Menú hamburguesa para móviles */
+  .hamburger-menu {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+  }
+  
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #263238;
+    padding: 20px;
+    gap: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+  
+  .main-nav.active {
+    display: flex;
+  }
+  
+  .main-nav a {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  
+  .main-nav a:last-child {
+    border-bottom: none;
+  }
+  
+  .hero-section {
+    height: 70vh;
+    min-height: 500px;
+  }
+  
+  .hero-section h1 {
+    font-size: 36px;
+  }
+  
+  .hero-content {
+    max-width: 90%;
+  }
+  
+  .customhost-section {
+    padding: 2rem 3rem;
+    gap: 2rem;
+  }
+  
+  .text-content h1 {
+    font-size: 2.2rem;
+  }
+  
+  .text-content p {
+    font-size: 1.1rem;
+  }
+  
+  .service-icons-bar {
+    width: 98%;
+    padding: 1.2rem 0.8rem;
+    gap: 1rem;
+    height: auto;
+    min-height: 12rem;
+  }
+  
+  .icon-item {
+    font-size: 0.85rem;
+    flex: 1 1 45%;
+  }
+  
+  .service-icons-bar .material-icons {
+    font-size: 50px;
+  }
+  
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .footer-col {
+    margin: 0.5rem;
+  }
+}
+
+/* Móviles pequeños (hasta 480px) */
+@media (max-width: 480px) {
+  /* Mantener ocultos teléfono, email y auth-links */
+  .phone, .email, .auth-links {
+    display: none;
+  }
+  
+  .header-contact {
+    gap: 0;
+  }
+  
+  /* Ajustar header para móviles pequeños */
+  .header-top {
+    padding: 12px 15px;
+    min-height: 80px;
+  }
+  
+  /* Logo más pequeño para móviles */
+  .logo {
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .imgLogo {
+    height: 60px;
+    width: auto;
+    max-width: 120px;
+    margin-left: -10px;
+    object-fit: contain;
+  }
+  
+  /* Hamburger más pequeño */
+  .hamburger-menu {
+    top: 18px;
+    right: 15px;
+    padding: 10px 15px;
+  }
+  
+  .hamburger-menu span {
+    width: 22px;
+    height: 2px;
+  }
+  
+  .main-nav {
+    gap: 12px;
+  }
+  
+  .main-nav a {
+    font-size: 13px;
+  }
+  
+  .hero-section {
+    height: 60vh;
+    min-height: 400px;
+  }
+  
+  .hero-section h1 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+  
+  .hero-content {
+    max-width: 95%;
+    padding: 0 15px;
+  }
+  
+  .customhost-section {
+    padding: 1.5rem 1.5rem;
+    gap: 1.5rem;
+  }
+  
+  .text-content h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+  
+  .text-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .image-content img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+  
+  .service-icons-bar {
+    width: 100%;
+    padding: 1rem 0.5rem;
+    gap: 0.8rem;
+    margin: -1.5rem auto 2rem;
+    border-radius: 1rem;
+  }
+  
+  .icon-item {
+    font-size: 0.75rem;
+    flex: 1 1 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .service-icons-bar .material-icons {
+    font-size: 40px;
+  }
+  
+  .footer {
+    padding: 1.5rem 1rem;
+  }
+  
+  .footer-col {
+    margin: 0.3rem;
+  }
+  
+  .footer-logo {
+    height: 40px;
+  }
+}
