@@ -23,34 +23,26 @@
             </div>
             <div class="header-contact">
                 <div class="language-selector">
-                  <div class="language-toggle">
-                    <span class="lang-option" data-lang="en">
-                      <img src="Assets/img/flags/en.png" alt="English" class="flag-icon">
-                      <span>EN</span>
-                    </span>
-                    <div class="toggle-slider" id="language-toggle">
-                      <div class="toggle-button"></div>
-                    </div>
-                    <span class="lang-option" data-lang="es">
-                      <img src="Assets/img/flags/es.png" alt="Español" class="flag-icon">
-                      <span>ES</span>
-                    </span>
-                  </div>
+                  <button class="lang-toggle-btn" id="lang-toggle-btn">
+                    <img src="Assets/img/flags/en.png" alt="English" class="flag-icon" id="lang-flag">
+                    <span id="lang-label">EN</span>
+                  </button>
                 </div>
-                <div class="phone"><img src="Assets/img/page/Phone call.png" alt=""> +511 900-800</div>
-                <div class="email"><img src="Assets/img/page/Vector (1).png" alt="">reservas@customhost.com</div>
-                <div class="auth-links">
-                    <a href="https://customhost-frontend-hend.vercel.app/iam/login"><img src="Assets/img/page/person.png" alt=""><span data-i18n="login">Sign in</span></a>
-                </div>
-            </div>            
+                <div class="phone header-hide-mobile"><img src="Assets/img/page/Phone call.png" alt=""> +511 900-800</div>
+                <div class="email header-hide-mobile"><img src="Assets/img/page/Vector (1).png" alt="">reservas@customhost.com</div>
+            </div>
+            <div class="hamburger" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="main-nav" id="main-nav">  
+                <a href="about-us.html" data-i18n="aboutHeader">About Us</a>
+                <a href="for-hotels.html">For Hotels</a>
+                <a href="for-guests.html">For Guests</a>
+                <a href="#testimonios" data-i18n="testimonialsHeader">Testimonials</a>
+            </nav>
         </div>
-        
-        <nav class="main-nav">  
-            <a href="about-us.html" data-i18n="aboutHeader">About Us</a>
-            <a href="for-hotels.html">For Hotels</a>
-            <a href="for-guests.html">For Guests</a>
-            <a href="#testimonios" data-i18n="testimonialsHeader">Testimonials</a>
-        </nav>
     </header>
 
 <section class="hero-section">
@@ -224,41 +216,42 @@
 </section>
 
 <!-- Footer -->
-<footer class="footer">
-    <div class="footer-col">
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="footer-col footer-brand">
         <img src="Assets/img/Servicios/LightLogo.png" alt="CustomHost Logo" class="footer-logo">
-        <p>contact@customhost.com<br>+51 995 589 830</p>
-    </div>
-    <div class="footer-col">
+        <p class="footer-contact">contact@customhost.com<br>+51 995 589 830</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
         <h4 data-i18n="footer.sections">SECTIONS</h4>
         <ul>
-            <li data-i18n="footer.home">Home</li>
-            <li data-i18n="footer.guests">For Guests</li>
-            <li data-i18n="footer.about">About Us</li>
-            <li data-i18n="footer.contact">Contact Us</li>
+          <li data-i18n="footer.home">Home</li>
+          <li data-i18n="footer.guests">For Guests</li>
+          <li data-i18n="footer.about">About Us</li>
+          <li data-i18n="footer.contact">Contact Us</li>
         </ul>
-    </div>
-    <div class="footer-col">
+      </div>
+      <div class="footer-col">
         <h4 data-i18n="footer.help">HELP</h4>
         <ul>
-            <li data-i18n="footer.faqs">FAQs</li>
-            <li data-i18n="footer.terms">Terms of Service</li>
-            <li data-i18n="footer.report">Report a Problem</li>
-            <li data-i18n="footer.privacy">Privacy Policy</li>
+          <li data-i18n="footer.faqs">FAQs</li>
+          <li data-i18n="footer.terms">Terms of Service</li>
+          <li data-i18n="footer.report">Report a Problem</li>
+          <li data-i18n="footer.privacy">Privacy Policy</li>
         </ul>
-    </div>
-    <div class="footer-col">
-        <h4 data-i18n="footer.follow">FOLLOW US</h4>
-        <ul>
-            <li>Facebook</li>
-            <li>Twitter</li>
-            <li>Instagram</li>
-            <li>YouTube</li>
-        </ul>
+      </div>
     </div>
     <div class="footer-bottom">© All rights reserved by SoftCore</div>
-</footer>
+  </footer>
 <script src="js/hotel-cards.js"></script>
+<script src="js/lang-toggle.js"></script>
+<script src="js/hamburger.js"></script>
 <script src="js/i18n.js"></script>
 </body>
 </html>
