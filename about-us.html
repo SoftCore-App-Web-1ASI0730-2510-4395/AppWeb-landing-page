@@ -20,34 +20,26 @@
             </div>
             <div class="header-contact">
                 <div class="language-selector">
-                  <div class="language-toggle">
-                    <span class="lang-option" data-lang="en">
-                      <img src="Assets/img/flags/en.png" alt="English" class="flag-icon">
-                      <span>EN</span>
-                    </span>
-                    <div class="toggle-slider" id="language-toggle">
-                      <div class="toggle-button"></div>
-                    </div>
-                    <span class="lang-option" data-lang="es">
-                      <img src="Assets/img/flags/es.png" alt="Español" class="flag-icon">
-                      <span>ES</span>
-                    </span>
-                  </div>
+                  <button class="lang-toggle-btn" id="lang-toggle-btn">
+                    <img src="Assets/img/flags/en.png" alt="English" class="flag-icon" id="lang-flag">
+                    <span id="lang-label">EN</span>
+                  </button>
                 </div>
-                <div class="phone"><img src="Assets/img/page/Phone call.png" alt=""> +511 900-800</div>
-                <div class="email"><img src="Assets/img/page/Vector (1).png" alt="">reservas@customhost.com</div>
-                <div class="auth-links">
-                    <a href="https://customhost-app.vercel.app/iam/login"><img src="Assets/img/page/person.png" alt=""><span data-i18n="login">Sign in</span></a>
-                </div>
-            </div>            
+                <div class="phone header-hide-mobile"><img src="Assets/img/page/Phone call.png" alt=""> +511 900-800</div>
+                <div class="email header-hide-mobile"><img src="Assets/img/page/Vector (1).png" alt="">reservas@customhost.com</div>
+            </div>
+            <div class="hamburger" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
         
-        <nav class="main-nav">  
+        <nav class="main-nav" id="main-nav">  
             <a href="about-us.html" data-i18n="aboutHeader">About Us</a>
             <a href="for-hotels.html">For Hotels</a>
             <a href="for-guests.html">For Guests</a>
-            <a href="#testimonios" data-i18n="testimonialsHeader">Testimonials</a>
-            <a href="#soporte" data-i18n="supportHeader">Support</a>
+ 
         </nav>
     </header>
 
@@ -58,15 +50,17 @@
 </section>
 
 <section class="customhost-section">
-  <div class="text-content">
-    <h1 data-i18n="aboutUs.sectionTitle">CustomHost Hotel</h1>
-    <p data-i18n="aboutUs.description">
-      Our hotel is an innovative space strategically located to offer a unique experience of personalization and comfort. It combines wellness and elegance with the latest in home automation technology, allowing every detail of your stay to be tailored to your preferences.
-With rooms equipped with automatic temperature control, personalized services from the moment you arrive, and a modern infrastructure that includes secure access, relaxation areas, and full connectivity.
-    </p>
-  </div>
-  <div class="image-content">
-    <img src="Assets/img/Servicios/about-us-hotel.jpg" alt="Imagen del hotel" />
+  <div class="aboutus-flex">
+    <div class="text-content">
+      <h1 data-i18n="aboutUs.sectionTitle">CustomHost Hotel</h1>
+      <p data-i18n="aboutUs.description">
+        Our hotel is an innovative space strategically located to offer a unique experience of personalization and comfort. It combines wellness and elegance with the latest in home automation technology, allowing every detail of your stay to be tailored to your preferences.<br>
+        With rooms equipped with automatic temperature control, personalized services from the moment you arrive, and a modern infrastructure that includes secure access, relaxation areas, and full connectivity.
+      </p>
+    </div>
+    <div class="image-content">
+      <img src="Assets/img/Servicios/about-us-hotel.jpg" alt="Imagen del hotel" />
+    </div>
   </div>
 </section>
 
@@ -131,7 +125,7 @@ With rooms equipped with automatic temperature control, personalized services fr
     <h2 class="team-title">About the Team Video</h2>
     <h3 class="team-subtitle">A short video introducing our team, highlighting who we are and how we collaborate to achieve our goals. </h3>
     <iframe width="560" height="315"
-        src="https://www.youtube.com/embed/gLHGZCwCiIQ"
+        src="https://www.youtube.com/embed/Gw_sWY1kbZA"
         title="About the Team Video"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -177,6 +171,8 @@ With rooms equipped with automatic temperature control, personalized services fr
     <div class="footer-bottom">© All rights reserved by SoftCore</div>
   </footer>
 
+  <script src="js/lang-toggle.js"></script>
+  <script src="js/hamburger.js"></script>
   <script src="js/i18n.js"></script>
 </body>
 </html>
