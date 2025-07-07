@@ -410,3 +410,16 @@
   font-weight: 500;
   letter-spacing: 1px;
 }
+
+ /*about the team video section*/
+
+.about-the-team-video {
+    padding-top: 3rem;
+    text-align: center;
+}
+.about-the-team-video iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+}
